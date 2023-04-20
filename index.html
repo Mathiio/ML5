@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <title>P5 machine</title>
+  <script src="assets/js/p5.js" defer></script>
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" defer></script>
+  <script src="assets/js/P5code.js" defer></script>
+</head>
+<body style="overflow: hidden">
+  <div id="loader">
+    <div class="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+  </div>
+  <div class="introduction">
+    <div class="introduction_nav">
+      <div class="introduction_nav-left">
+        <a href="">Artificial intelligence</a>
+        <a href="#about">About</a>
+        <a href="#possibilities">Options</a>
+        <a href="#program">Example</a>
+      </div>
+      <div class="introduction_nav-right">
+        <a href="#program">Get a demo</a>
+      </div>
+    </div>
+    <div class="introduction_show">
+      <div class="introduction_show-left">
+        <h1>Discover machine learning with<span>ml5 machine</span></h1>
+        <p>ml5.js aims to make machine learning approachable for a broad audience of artists, creative coders, and students. The library provides access to machine learning algorithms and models in the browser</p>
+        <a href="https://ml5js.org/">See more</a>
+      </div>
+      <div class="introduction_show-right">
+        <img src="assets/img/brain.svg" alt="">
+      </div>
+    </div>
+    <div class="go_down">
+      <a class="go_down-button" href="#about">
+        <ion-icon name="arrow-down-circle-outline"></ion-icon>
+      </a>
+    </div>
+  </div>
+  <div class="about" id="about">
+    <div class="about_header">
+      <img src="assets/img/bubble.png" alt="">
+      <h1>Functioning of <span>ML5 machine</span> in three key points</h1>
+      <p>This section provides a concise overview of the key aspects of Ml5, a JavaScript library for building machine learning models in the browser, highlighting its features and usage statistics.</p>
+    </div>
+    <div class="about_points">
+      <div class="about_point">
+        <span><h1>+30</h1><p>models</p></span>
+        <p>Ml5 provides pre-trained machine learning models for specific tasks. Some models have been used more than 600,000 times by developers.</p>
+      </div>
+      <div class="about_point">
+        <span><h1>+4000</h1><p>projects</p></span>
+        <p>Using these libraries, ml5 makes it easy for developers to train their own models for tasks like gesture recognition or numerical prediction.</p>
+      </div>
+      <div class="about_point">
+        <span><h1>+50K</h1><p>developers</p></span>
+        <p>Ml5 has a large community. Developers around the world use this open source JavaScript library to create differents models</p>
+      </div>
+    </div>
+  </div>
+  <div class="possibilities" id="possibilities">
+      <div class="possibilities_left">
+        <img id="bubble_background" src="assets/img/bubble.png" alt="">
+        <h1>The possibilities of <span>machine learning</span> in JavaScript</h1>
+        <div class="possibilities_left-point">
+          <div class="possibilities_left-point-icon">
+            <img src="assets/img/interactive.svg" alt="">
+          </div>
+          <h2>Interactive art with Ml5</h2>
+          <p>Ml5 enables the creation of interactive artworks using custom or pre-trained machine learning models. Artists can explore the possibilities of image or gesture recognition to create compelling interactive installations.</p>
+        </div>
+        <div class="possibilities_left-point">
+          <div class="possibilities_left-point-icon">
+            <img src="assets/img/see.svg" alt="">
+          </div>
+          <h2>Visualising data with Ml5</h2>
+          <p>Ml5 can be used to create interactive data visualisations that uncover trends and patterns hidden in the data. Machine learning models can help create more detailed and complex visualisations.</p>
+        </div>
+      </div>
+      <div class="possibilities_right">
+        <img src="assets/img/idea.svg" alt="">
+      </div>
+  </div>
+  <div class="program" id="program">
+    <div class="program_header">
+      <img src="assets/img/bubble.png" alt="">
+      <h1>Explore <span>for yourself</span> the possibilities of the Ml5</h1>
+      <p>Change the filter, the displayed image or the quantity of disturbing elements with the various selectors and sliders below</p>
+    </div>
+    <div class="noise_section">
+      <div class="noise_section-image">
+      </div>
+      <div class="noise_section-control">
+        <div class="segmented-control">
+          <input type="radio" name="radio2" value="1" id="tab-1" checked/>
+          <label for="tab-1" class= "segmented-control__1">
+            <p>No filter</p></label>
+          <input type="radio" name="radio2" value="2" id="tab-2" />
+          <label for="tab-2" class= "segmented-control__2">
+            <p>Filter 1</p></label>
+          <input type="radio" name="radio2" value="3" id="tab-3" />
+          <label for="tab-3" class= "segmented-control__3">
+            <p>Filter 2</p></label>
+          <input type="radio" name="radio2" value="4" id="tab-4" />
+          <label for="tab-4" class= "segmented-control__3">
+            <p>Filter 3</p></label>
+          <div class="segmented-control__color"></div>
+        </div>
+        <div class="noise_section-control-bar">
+          <p>Percentage of occurrence</p>
+          <div class="slider">
+            <div class="slider__box">
+              <span class="slider__btn" id="find"></span>
+              <span class="slider__color"></span>
+              <span class="slider__tooltip">0%</span>
+            </div>
+          </div>
+        </div>
+        <div class="noise_section-control-bar">
+          <p>Change the layout</p>
+          <div class="slider2">
+            <div class="slider__box2">
+              <span class="slider__btn2" id="find"></span>
+              <span class="slider__color2"></span>
+              <span class="slider__tooltip2">0%</span>
+            </div>
+          </div>
+        </div>
+        <div class="icon" id="change_image">
+          <div class="icon_picto">
+            <ion-icon name="reload-outline"></ion-icon>
+          </div>
+          <p>Load a new picture</p>
+        </div>
+      </div>
+      <div class="noise_section-results">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
